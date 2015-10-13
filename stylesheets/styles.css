@@ -22,6 +22,15 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* display social media links horizontally */
+ul#social li {
+    display:inline;
+}
+
+ul#social li a {
+    display: inline; 
+}
+
 /* make the link the entire size of the li item */
 li a { 
     margin: 0px; 
