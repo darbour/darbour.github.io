@@ -22,6 +22,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+#id p {
+  margin: 0; 
+  padding: 0; 
+}
+
 /* display social media links horizontally */
 ul#social li {
     display:inline;

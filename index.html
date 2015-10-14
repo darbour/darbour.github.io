@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://bibtex-js.googlecode.com/svn/trunk/src/bibtex_js.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,17 +35,36 @@
 
 <h2>
 <a id="publications" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Publications</h2>
-
-<ul>
-<li>Marazopoulou, Katerina, David Arbour, and David Jensen. "Refining the Semantics of Social Influence." arXiv preprint arXiv:1412.5238 (2014).</li>
-<li>Arbour, David, Marazopoulou, Katerina, Garant, Daniel and Jensen, David. "Propensity Score Matching for Causal Inference with Relational Data." UAI 2014 Workshop Causal Inference: Learning and Prediction. 2014.</li>
-<li>Maier, Marc, Marazopoulou, Katerina, Arbour, David and Jensen, David. "Flattening network data for causal discovery: What could go wrong?." Workshop on Information in Networks. 2013.</li>
-<li>Maier, Marc, Marazopoulou, Katerina, Arbour, David and Jensen, David. "A Sound and Complete Algorithm for Learning Causal Models from Relational Data." Uncertainty in Artificial Intelligence. 2013.</li>
-<li>Arbour, David, Atwood, James, El-Kishky, Ahmed and Jensen, David. "Agglomerative Clustering of Bagged Data Using Joint Distributions." (2013). Proceedings of the workshop on Machine Learning with Graphs (MLG).</li>
-<li>Dickson, P. E., Arbour, D. T., Adrion, W. R., &amp; Gentzel, A. (2010). Evaluation of automatic classroom capture for computer science education. In Proceedings of the fifteenth annual conference on Innovation and technology in computer science education (pp. 88-92). ACM.</li>
-<li>Dickson, P. E., Adrion, W. R., Hanson, A. R., &amp; Arbour, D. T. (2009). First experiences with a classroom recording system. In ACM SIGCSE Bulletin(Vol. 41, No. 3, pp. 298-302). ACM.</li>
-</ul>
-
+<div id="bibtex_display"></div>
+<div class="bibtex_template">
+    <p>
+        <span class="if abstracturl"><a class="abstracturl"></span><span class="title"></span><span class="if abstracturl"></a></span><br />
+        <span class="if author">
+            <span class="author"></span><br />
+        </span> <span class="if journal">
+            <span class="if journalurl"><a class="journalurl"></span><span class="journal" style="font-style: italic;"></span><span class="if journalurl"></a>, </span>
+        </span> <span class="if booktitle">
+            In <span class="if bookurl"><a class="bookurl"></span><span class="booktitle" style="font-style: italic;"></span><span class="if bookurl"></a>, </span>
+        </span> <span class="if volume">
+            <span class="volume"></span><span class="if number">(<span class="number"></span>)</span><span class="if pages">: <span class="pages"></span></span>,  
+        </span> <span class="if chapter">
+            chap. <span class="chapter"></span><span class="if pages">, <span class="pages"></span></span>, 
+        </span> <span class="if publisher">
+            <span class="publisher"></span>,  
+        </span> <span class="if edition">
+            <span class="edition"></span> edn., 
+        </span> <span class="if year">
+            <span class="if month">
+                <span class="month"></span>, 
+            </span>
+                <span class="year"></span>. 
+        </span> <span class="if fulltexturl">
+            <br /><b>Download Fulltext: <a class="fulltexturl">PDF</a></b>
+        </span> <span class="if additionalinfo">
+            <br /><span class="additionalinfo"></span>
+        </span>
+    </p> 
+</div>
 <h2> Talks
 <a id="talks" class="anchor" href="#talks" aria-hidden="true"><span class="octicon octicon-link"></span></a></h2>
 <ul>
@@ -79,6 +100,77 @@ You can also give me a shout on one of these:
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+<textarea id="bibtex_input" style="display:none;">
+@misc{arbour2015-win-rHSIC,
+ author = {David Arbour and Katerina Marazopoulou and David Jensen}, 
+ title = {Look both ways: Dependence and Direction in Relational Data}, 
+ booktitle = {Workshop on Information in Networks},
+ year = {2015}
+}
+
+@misc{kmarazo2014-nipsw-groundings,
+ author = {Katerina Marazopoulou and David Arbour and David Jensen}, 
+ title = {Refining the Semantics of Social Influence}, 
+ booktitle = {Networks: From Graphs to Rich Data, NIPS Workshops},
+ year = {2014}
+}
+
+@misc{darbour2014-uai-rpsm,
+ author = {David Arbour and Katerina Marazopoulou and Dan Garant and David Jensen}, 
+ title = {Propensity Score Matching for Causal Inference with Relational Data}, 
+ booktitle = {Causal Inference: Learning and Prediction Workshop, UAI},
+ year = {2014}
+}
+
+@misc{arbour2013agglomerative,
+  title={Agglomerative Clustering of Bagged Data Using Joint Distributions},
+  author={Arbour, David and Atwood, James and El-Kishky, Ahmed and Jensen, David},
+  year={2013},
+  booktitle = {Structured Learning: Inferring Graphs from Structured and Unstructured Inputs Workshop, ICML},
+
+}
+
+@misc{maier2013-win-flattening,
+ author = {Marc Maier and Katerina Marazopoulou and David Arbour and David Jensen}, 
+ title = {Flattening network data for causal discover: What could go wrong?}, 
+ booktitle = {Workshop on Information in Networks},
+ year = {2013}
+}
+
+@inproceedings{maier2013rcd,
+ author = {Marc Maier and Katerina Marazopoulou and David Arbour and David Jensen}, 
+ title = {A Sound and Complete Algorithm for Learning Causal Models from Relational Data}, 
+ booktitle = {Proceedings of the Twenty-Ninth Conference on Uncertainty in Artificial Intelligence},
+ year = {2013}
+}
+
+@misc{maier2013-rcd-acsl,
+ author = {Marc Maier and Katerina Marazopoulou and David Arbour and David Jensen}, 
+ title = {A Sound and Complete Algorithm for Learning Causal Models from Relational Data}, 
+ booktitle = {Approaches to Causal Structure Learning Workshop, UAI},
+ year = {2013}
+}
+
+@inproceedings{dickson2010evaluation,
+  title={Evaluation of automatic classroom capture for computer science education},
+  author={Dickson, Paul E and Arbour, David T and Adrion, W Richards and Gentzel, Amanda},
+  booktitle={Proceedings of the fifteenth annual conference on Innovation and technology in computer science education},
+  pages={88--92},
+  year={2010},
+  organization={ACM}
+}
+
+@article{dickson2009first,
+  title={First experiences with a classroom recording system},
+  author={Dickson, Paul E and Adrion, W Richards and Hanson, Allen R and Arbour, David T},
+  journal={ACM SIGCSE Bulletin},
+  volume={41},
+  number={3},
+  pages={298--302},
+  year={2009},
+  publisher={ACM}
+}
+
+</textarea>		
   </body>
 </html>
